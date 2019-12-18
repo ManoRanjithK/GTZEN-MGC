@@ -37,8 +37,8 @@ Figure 2: Music Features
 ```
 ### Feature extraction:
 
-[x] Python’s Librosa library was used to extract all the above mentioned features except CFCC features.
-[x] SMT Lab code was used to extract the MFCC and CFCC [2] features (both static + delta)
+* Python’s Librosa library was used to extract all the above mentioned features except CFCC features.
+* SMT Lab code was used to extract the MFCC and CFCC [2] features (both static + delta)
 
 
 
