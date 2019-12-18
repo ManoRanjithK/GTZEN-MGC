@@ -106,13 +106,14 @@ shows the accuracy of the HMM trained using different combinations of states, sy
 ```
 Table 3: Hidden Markov Model
 ```
-```
-States Symbols Features Considered Accuracy
-15 10 Librosa Features 32.
-10 10 Librosa Features 30.
-10 10 MFCC (extracted using lab code ) 28.
-10 30 Librosa Features 25.
-```
+
+States | Symbols | Features Considered | Accuracy
+-------|---------|---------------------|---------
+15 | 10 | Librosa Features | 32%
+10 | 10 | Librosa Features | 30%
+10 | 10 | MFCC (extracted using lab code ) | 28%
+10 | 30 | Librosa Features | 25%
+
 In music genre classification, since multiple songs can belong to a same genre, using a HMM might be inappro-
 priate since all the songs in a genre may follow some different temporal patterns.
 
