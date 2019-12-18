@@ -171,12 +171,12 @@ different number of neurons in each hidden layer.
 ```
 Table 6: Artificial Neural Network
 ```
-```
-Hidden Layers Neurons in each hidden layer Features Considered Accuracy
-2 [10 10] Librosa Features 43.
-1 [10] Librosa Features 46.
-2 [50 10] Librosa Features 53.
-```
+Hidden Layers | Neurons in each hidden layer | Features Considered | Accuracy
+--------------|------------------------------|---------------------|---------
+2 | [10 10] | Librosa Features | 43%
+1 | [10] | Librosa Features | 46%
+2 | [50 10] | Librosa Features | 53%
+
 Table 6 shows the classification accuracy for ANN with different number of hidden layers and different numbers
 of neurons considered in each layer.
 
