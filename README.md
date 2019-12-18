@@ -9,11 +9,9 @@ Music Genre Classification of the popular GTZEN dataset.
 # Mano Ranjith
 
 ### mano1381997@gmail.com
-#
-#
+
 # Music Genre Classification
-#
-#
+
 Musical genres are categorical labels created by humans to characterize pieces of music. A musical genre is
 characterized by the common characteristics shared by its members. These characteristics typically are related to
 the instrumentation, rhythmic structure, and harmonic content of the music.
@@ -41,7 +39,7 @@ Figure 2: Music Features
 1) Python’s Librosa library was used to extract all the above mentioned features except CFCC features.
 2) SMT Lab code was used to extract the MFCC and CFCC [2] features (both static + delta)
 ```
-(^1) The dataset can be downloaded from here: [http://marsyas.info/downloads/datasets.html](http://marsyas.info/downloads/datasets.html)
+![http://marsyas.info/downloads/datasets.html](http://marsyas.info/downloads/datasets.html)
 
 
 ### Classifiers used:
@@ -56,17 +54,16 @@ Figure 2: Music Features
 We trained the GMM having full co-variance matrix. The window size for extracting features using the lab code
 was 30ms, yielding to 3000 feature vectors for a file. We then tried averaging the feature set on equal intervals since
 training using 3000 feature vector was computationally heavy.
-
 ```
 Table 1: Gaussian Mixture Model
-```
-```
-Mix. Comp. Features Considered Accuracy
-3 Librosa Features 52.
-5 Librosa Features 58.
-7 Librosa Features 57.
-5 MFCC (extracted using lab code) 30.
-5 CFCC (extracted using lab code) 56.
+````
+Mix. Comp. | Features Considered | Accuracy
+---------- | ------------------- | --------
+3 | Librosa  Features | 52%
+5 | Librosa  Features | 58%
+7 | Librosa Features | 57%
+5 | MFCC (extracted using lab code) | 30.
+5 | CFCC (extracted using lab code) | 56.
 ```
 We found that the model performed the best when 5 mixture components and the features extracted using librosa
 library were used. Now, taking the model into consideration we tried to get the pairwise accuracy for different
