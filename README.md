@@ -33,7 +33,6 @@ fication. In this project we are dealing with the following features (figure 2):
 
 ![MusicFeatures](Images/MusicFeatures.png)
 ```
-```
 Figure 2: Music Features
 ```
 ### Feature extraction:
