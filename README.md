@@ -37,11 +37,9 @@ Figure 2: Music Features
 ```
 ### Feature extraction:
 
-```
-1) Python’s Librosa library was used to extract all the above mentioned features except CFCC features.
-2) SMT Lab code was used to extract the MFCC and CFCC [2] features (both static + delta)
-```
-![http://marsyas.info/downloads/datasets.html](http://marsyas.info/downloads/datasets.html)
+[x] Python’s Librosa library was used to extract all the above mentioned features except CFCC features.
+[x] SMT Lab code was used to extract the MFCC and CFCC [2] features (both static + delta)
+
 
 
 ### Classifiers used:
@@ -66,27 +64,26 @@ Mix. Comp. | Features Considered | Accuracy
 7 | Librosa Features | 57%
 5 | MFCC (extracted using lab code) | 30.
 5 | CFCC (extracted using lab code) | 56.
-```
+
 We found that the model performed the best when 5 mixture components and the features extracted using librosa
 library were used. Now, taking the model into consideration we tried to get the pairwise accuracy for different
 genres. Following are some of the results. (refer table 2)
-
 ```
 Table 2: Pairwise accuracy for the model
 ```
-```
-Genre1 Genre2 Accuracy1 Accuracy2 Total Accuracy
-Jazz Metal 100 100 100
-Metal Reggae 90 100 95
-Blues Hiphop 85 95 90
-Disco Metal 100 80 90
-Disco Pop 100 0 50
-Pop Rock 0 100 50
-Country Pop 100 0 50
-Blues Pop 95 0 47.
-Jazz Pop 65 0 32.
-Pop Reggae 0 65 32.
-```
+Genre1 | Genre2 | Accuracy1 | Accuracy2 | Total Accuracy
+-------|--------|-----------|-----------|----------------
+Jazz | Metal | 100% | 100% | 100%
+Metal | Reggae | 90% | 100% | 95%
+Blues | Hiphop | 85% | 95% | 90%
+Disco | Metal | 100% | 80% | 90%
+Disco | Pop | 100% | 0% | 50%
+Pop | Rock | 0% | 100% |  50%
+Country | Pop | 100% | 0% | 50%
+Blues | Pop | 95% | 0% | 47%
+Jazz | Pop | 65% | 0% | 32%
+Pop | Reggae | 0% | 65% | 32%
+
 We observed that the model was able to discriminate better between Jazz and Metal but performed very bad for
 Jazz vs. Pop. Also, there were some classes which were completely missclassified as can be seen from table 2.
 
