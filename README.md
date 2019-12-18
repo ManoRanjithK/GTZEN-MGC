@@ -22,14 +22,17 @@ GTZAN dataset [1] which contains 10 music genres (figure 1) was used in this pro
 files of duration 30 seconds each for every music genre. The tracks are all 22050Hz Mono 16-bit audio files in .wav
 format.
 
+![MusicGenre](Images/MusicGenres.png)
 ```
-Figure 1: Music Genres in GTZAN dataset^1
+Figure 1: Music Genres in GTZAN dataset ^
 ```
 ### Features:
 
 There are wide range of features that are applied to sound and accoustics that can be used in music genre classi-
 fication. In this project we are dealing with the following features (figure 2):
 
+![MusicFeatures](Images/MusicFeatures.png)
+```
 ```
 Figure 2: Music Features
 ```
