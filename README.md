@@ -125,13 +125,13 @@ maximum likelihood. We used these top K templates as reference templates.
 ```
 Table 4: Dynamic Time Warping
 ```
-```
-K Accuracy
-5 12.
-10 16.
-15 19
-30 20
-```
+K | Accuracy
+--|---------
+5 | 12%
+10 | 16%
+15 | 19%
+30 | 20%
+
 We observed that the accuracy did not improve much after K = 30. We also tried to average out all the templates
 to create a single reference template for each class and found the classification accuracy to be 26 percentage.
 In this case we thought of using Cross-Word Reference Template approach as mentioned in [4], but it won’t be
@@ -147,13 +147,13 @@ GMMs as mentioned in [5]. The extraction process is displayed in the figure 4.
 ```
 Table 5: Support Vector Machines
 ```
-```
-Kernel Type Features Considered Accuracy
-Polynonimal Basis Super Feature Vectors based on UBM-GMM 45.
-Sigmoidal Basis Super Feature Vectors based on UBM-GMM 10
-Polynomial Basis Librosa Features 44.
-Polynomial Basis CFCC (extracted using lab code) 13.
-```
+Kernel Type | Features | Considered Accuracy
+------------|----------|-------------------
+Polynonimal Basis | Super Feature Vectors based on UBM-GMM | 45%
+Sigmoidal Basis | Super Feature Vectors based on UBM-GMM | 10%
+Polynomial Basis | Librosa Features | 44%
+Polynomial Basis | CFCC (extracted using lab code) | 13%
+
 Table 5 shows the accuracy of the model for different Kernel type and different features. The model performed
 best when the polynomial basis kernel function was used and the mean supervectors generated using the UBM-GMM
 as shown in the figure 4 were used for training and testing the model.
